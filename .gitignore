@@ -1,3 +1,7 @@
+# The only relevant npm package is tailwind - ignore the package files
+package.json
+package-lock.json
+
 # Logs
 logs
 *.log

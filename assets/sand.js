@@ -1,4 +1,4 @@
-window.background = "#0d1014";
+window.background = "#1c1b22";
 window.foreground = "#f6f6f6";
 
 // canvas size (px)
