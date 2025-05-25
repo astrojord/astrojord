@@ -14,22 +14,90 @@
     </head>
 
     <body>
-        <nav class="navbar flex p-4 bg-transparent justify-between items-center columns-3">
-            <div class="home">
-                <a class="font-bold hover:text-emerald-700 px-2" href="#">Jordan Sheely 👋</a>
+        <nav id="nav" class="navbar p-4 border-b border-zinc-900 bg-[#1c1b22] absolute w-screen left-0 top-0 flex lg:justify-between items-center">
+            <div id="home">
+                <a class="font-bold hover:text-emerald-700 px-2" href="#top">Jordan Sheely 👋</a>
             </div>
-            <div class="links flex justify-between items-center">
-                <a class="text-emerald-400 hover:text-emerald-700 px-4" href="#">about</a>
+            <div id="links" class="flex justify-between items-center">
+                <a class="text-emerald-400 hover:text-emerald-700 px-4" href="#about">about</a>
                 <a class="text-emerald-400 hover:text-emerald-700 px-4" href="https://github.com/astrojord">github</a>
                 <a class="text-emerald-400 hover:text-emerald-700 px-4" href="./assets/resume_js_0525.pdf">resume</a>
             </div>
-            <div class="extra">
+            <div id="extra">
                 <!-- not sure what to put here but surely there's something -->
             </div>
         </nav>
-        <div class="">
-            <h2>test</h2>
-            <div class="sand"></div>
+        <div class="main h-screen w-screen overflow-hidden scroll-smooth">
+            <div id="top" class="h-screen w-screen flex justify-center">
+                <div id="sand"></div>
+            </div>
+
+            <div id="about" class="overflow-auto h-screen w-screen p-4 flex flex-wrap mt-10 columns-1 lg:columns-3 lg:justify-between">
+                <div class="rounded-lg bg-zinc-800 ring ring-zinc-900 w-100vw lg:w-[30vw] h-fit shadow-xl mt-10">
+                    <h3 class="font-bold text-indigo-400 tracking-tight mt-1 p-4">Professional round-up</h3>
+                    <p class="mt-2 text-sm px-4 pb-4">
+                        Full stack developer in the lab sciences domain, serving multiple federal, state, and private clients at my day job. Located in the Seattle, WA area.
+                        <br><br>
+                        I'm passionate about translating good laboratory practices and data management into robust, secure, and scalable applications, maintaining scientific and ethical integrity. 
+                        My current work involves statistical analysis and full stack management applications in regulated environments for industrial hygiene, analytical chemistry, and mineralogy. 
+                        <br><br>
+                        My previous professional experience includes distributed work with a grab bag of machine learning algorithms, ETL pipelines, and data science, with an educational background in computational astrophysics.
+                        <br><br>
+                        Other interests include scientific computing, retro hardware emulation, and relational database internals. I pride myself on being an efficient continual learner, with the skill to rapidly pick up new stack elements and toolchains.
+                    </p>
+                </div>
+                <div class="rounded-lg bg-zinc-800 ring ring-zinc-900 w-100vw lg:w-[30vw] h-fit shadow-xl mt-10">
+                    <h3 class="font-bold text-indigo-400 tracking-tight mt-1 p-4">Technical knowledge</h3>
+                    <div class="px-2 pb-4">
+                        <table class="table-auto w-full text-left mt-2 text-sm">
+                            <tbody>
+                                <tr class="border-b border-zinc-900 hover:bg-zinc-900">
+                                    <th class="p-2">Python</th>
+                                    <td class="p-2">Django, Flask, Pandas, scikit-learn, TensorFlow</td>
+                                </tr>
+                                <tr class="border-b border-zinc-900 hover:bg-zinc-900">
+                                    <th class="p-2">Java</th>
+                                    <td class="p-2">Spring, Maven</td>
+                                </tr>
+                                <tr class="border-b border-zinc-900 hover:bg-zinc-900">
+                                    <th class="p-2">HTML/CSS/JS</th>
+                                    <td class="p-2">Bootstrap, Tailwind, HTMX</td>
+                                </tr>
+                                <tr class="border-b border-zinc-900 hover:bg-zinc-900">
+                                    <th class="p-2">Rust</th>
+                                    <td class="p-2">egui, Tauri, Axum</td>
+                                </tr>
+                                <tr class="border-b border-zinc-900 hover:bg-zinc-900">
+                                    <th class="p-2">DevOps/Cloud</th>
+                                    <td class="p-2">Docker, Terraform, AWS, Azure</td>
+                                </tr>
+                                <tr class="border-b border-zinc-900 hover:bg-zinc-900">
+                                    <th class="p-2">Relational DBs</th>
+                                    <td class="p-2">PostgreSQL, MySQL, SQL Server, SQLite</td>
+                                </tr>
+                                <tr class="border-b border-zinc-900 hover:bg-zinc-900">
+                                    <th class="p-2">Others</th>
+                                    <td class="p-2">R, MATLAB, Mathematica, LaTeX, git, Spark, Hive</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+                <div class="rounded-lg bg-zinc-800 ring ring-zinc-900 w-100vw lg:w-[30vw] h-fit shadow-xl mt-10">
+                    <h3 class="font-bold text-indigo-400 tracking-tight mt-1 p-4">Outside of work</h3>
+                    <p class="mt-2 text-sm px-4 pb-4">
+                        My off-the-clock time is usually spent...
+                    </p>
+                    <div class="mx-4 mb-4">
+                        <ul class="text-sm list-disc px-4">
+                            <li>building, fixing, and sometimes designing mechanical keyboards</li>
+                            <li>running TTRPG campaigns canned and custom, primarily 5e 2014</li>
+                            <li>pondering analytics on the NHL and MLB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

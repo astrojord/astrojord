@@ -2,10 +2,10 @@ window.background = "#1c1b22";
 window.foreground = "#f6f6f6";
 
 // canvas size (px)
-const width = 300;
-const height = 200;
-const zoom = 1; //window.innerWidth >= width * 4 ? 4 : 2;
-const circleSize = Math.floor(width/50);
+const width = 500;
+const height = 280;
+const zoom = window.innerWidth >= width * 4 ? 4 : 2;
+const circleSize = Math.floor(width/100);
 
 // Figure out if the foreground text should be light
 // or dark for palette
@@ -114,6 +114,7 @@ function make(id, width, height, zoom, fn, webgl = false) {
             // Zoom canvas
             const canvas = p.createCanvas(width, height, p.isWEBGL ? p.WEBGL : p.P2D);
             p.canvas = canvas;
+            p.canvas.parent = id;
             p.setZoom(zoom);
 
             p.background(p.backgroundColor);
